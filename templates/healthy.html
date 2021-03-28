@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap" rel="stylesheet">
+
+    <title>The Bean</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: #FCE4AA;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        ::-webkit-file-upload-button {
+            color: white;
+            padding: 15px 30px 15px;
+            background-color: #ffb174;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            color: white;
+            padding: 15px 30px 15px;
+            background-color: #000;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .header {
+            display: flex;
+            padding: 20px;
+        }
+
+        .header-item {
+            flex-grow: 1;
+        }
+
+        .main-div {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu-bar {
+            text-align: right;
+        }
+
+        .menu-bar a {
+            padding-left: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .intro-div {
+            text-align: center;
+            padding-top: 8%;
+        }
+
+        .intro-div h1 {
+            font-family: 'Spartan', sans-serif;
+            text-transform: uppercase;
+            font-size: 100px;
+            letter-spacing: 2px;
+            line-height: 0px;
+        }
+
+        .info-div {
+            margin-top: 50px;
+            margin: 50px;
+        }
+
+        .info-div h3 {
+            text-transform: uppercase;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="main-div">
+        <header class="header">
+            <div class="header-item">
+                <a class="logo" href="/">🌱👨‍🌾</a>
+            </div>
+            <div class="header-item menu-bar">
+                <a>Policy</a>
+                <a>Devpost</a>
+            </div>
+        </header>
+
+        <section class="intro-div">
+            <img src="{{ user_image }}" width="80%" />
+        </section>
+
+        <section>
+            <div class="info-div" style="text-align: center;">
+                <h3 style="font-weight: bold;">{{ pred_output }} ✨ </h3>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
